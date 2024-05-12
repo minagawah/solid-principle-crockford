@@ -4,6 +4,7 @@
     "jsx": "react-jsx", // "react"
     "jsxImportSource": "@emotion/react",
     "moduleResolution": "node", // Needed when using 'resolveJsonModule'
+    "moduleDetection": "force",
     "typeRoots": ["./node_modules/@types", "./src/d.ts"],
     "resolveJsonModule": true,
     "allowJs": true,
@@ -16,13 +17,13 @@
     // "strict": true, // works without it
     // "strictNullChecks": false, // works without it
     // "alwaysStrict": true, // works without it
-    "skipLibCheck": true, // Definitely needed to ignore 'node_modules'
+    "skipLibCheck": true // Definitely needed to ignore 'node_modules'
   },
   "include": ["src/**/*.ts", "src/**/*.js"],
   "exclude": [
     "node_modules",
     "types",
     "jsdoc",
-    "src/assets",
-  ],
+    "src/assets"
+  ]
 }
